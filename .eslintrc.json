@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "next/core-web-vitals"
+    // "eslint:recommended"
+    // "plugin:react/recommended"
+    // "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "ignorePatterns": ["i18*.js", "TranslationProvider.js", "usePaginate.ts", "useGenieTable.ts"],
+  "rules": {
+    "no-console": "warn",
+    // "@typescript-eslint/no-explicit-any": "off",
+    "react-hooks/rules-of-hooks": "off", // For checking rules of hooks
+    "react-hooks/exhaustive-deps": "off", // For checking hook
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ]
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier", "react-refresh", "react-hooks"]
+}

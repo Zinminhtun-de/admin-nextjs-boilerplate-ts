@@ -1,0 +1,9 @@
+.swiper {
+  width: 80vw;
+  height: 85vh;
+  /* background-color: aqua; */
+}
+
+.swiper-slide:nth-child(n) {
+  width: 70%;
+}
